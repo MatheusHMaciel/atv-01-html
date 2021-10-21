@@ -1,0 +1,145 @@
+/* Mudando todas as fontes de todos os itens html*/
+*{ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+
+header nav ul li {
+    font-weight: bold;
+}
+/* itens banner*/
+
+#banner, #novidade {
+    background-color: #3cd1db;
+    padding: 50px; 
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin-top: 20px;
+
+}
+#banner img, #novidade img{
+    width: 350px;
+    height: 200px;
+}
+#banner div, #novidade div{
+    width: 600px;
+    margin-top: 20px;
+    }
+/*itens do destaque*/ 
+
+#galeria{
+    margin-top: 10px;
+    margin-bottom: 10px;
+     
+}
+
+/*footer*/
+
+footer{
+    background-color:rgba(60, 209, 219, 0.30) ;
+    display: grid;
+    grid-template-areas: 
+    'imagem-logo enderecos midias-sociais'
+    'imagem-logo enderecos menu-rodape'
+    'imagem-logo enderecos menu-rodape';
+    padding: 20px;
+
+}
+#logotipo-rodape{
+    grid-area: imagem-logo;
+}
+#enderecos-rodape{
+    grid-area: enderecos;
+}
+#midias-sociais{
+    grid-area: midias-sociais;
+}
+#midias-sociais img{
+    height:50px ;
+    backface-visibility: hidden;
+}
+#menu-rodape{
+    grid-area: menu-rodape;
+}
+/*minhas classes ccs*/
+
+.texto-centralizado{
+    text-align: center;
+
+}
+
+/* grupo de cards */
+
+.grupo-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px; 
+}
+
+
+.senai-card{
+    width: 250px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+.senai-card img{
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+    padding: 10px;
+}
+.senai-card div{
+    padding: 10px;
+}
+.img-logo{
+    width: 100px;
+    margin: 10px;
+
+}
+
+
+/*ajustes bootstrap*/
+
+.carousel-item{
+    height: 100vh;
+}
+.carousel-item img{
+    height: 90%;
+}
+.carousel-caption{
+    background-color: rgba(192, 192, 192, 0.65);
+    border-radius: 20px;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.carousel-control-next-icon{
+    background-image: url("../S02/caret-right-fill.svg");
+    color: blue;
+}
+.carousel-control-prev-icon{
+    background-image: url("../S02/caret-left-fill.svg");
+    color: blue;
+}
